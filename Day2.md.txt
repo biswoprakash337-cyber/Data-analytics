@@ -1,0 +1,371 @@
+DATA ANALYTICS — DAY 2 NOTES
+TOPIC: DATA CLEANING
+
+==================================================
+PART 1 — WHAT IS DATA CLEANING?
+
+Definition:
+Data cleaning means identifying and fixing:
+
+incorrect data
+incomplete data
+duplicate data
+inconsistent data
+
+Raw business data is NEVER perfect.
+
+Example of Dirty Data:
+
+Customer City Revenue
+Rahul Delhi 5000
+rahul delhi 5000
+NULL Mumbai 7000
+Priya Chennai -200
+
+Problems:
+
+duplicate records
+inconsistent formatting
+missing values
+invalid revenue
+
+Bad data causes wrong analysis.
+
+==================================================
+PART 2 — WHY DATA CLEANING IS IMPORTANT
+
+Example:
+A company dashboard shows:
+
+Revenue = ₹5 Crore
+
+Later analysts discover:
+
+duplicate rows
+cancelled orders included
+
+Actual revenue was lower.
+
+Bad data leads to:
+
+wrong decisions
+incorrect reports
+bad forecasting
+financial loss
+
+Golden Rule:
+BAD DATA = BAD BUSINESS DECISIONS
+
+==================================================
+PART 3 — COMMON DATA PROBLEMS
+Missing Values
+
+Example:
+
+Customer Age
+Rahul 25
+Priya NULL
+
+Reasons:
+
+customer skipped form
+system error
+data corruption
+
+Problems:
+
+inaccurate analysis
+biased results
+Duplicate Records
+
+Example:
+
+Order ID Customer
+101 Rahul
+101 Rahul
+
+Problems:
+
+inflated revenue
+wrong KPIs
+reporting errors
+Inconsistent Formatting
+
+Example:
+
+Delhi
+delhi
+DELHI
+
+Computer treats them as different values.
+
+Problems:
+
+wrong grouping
+dashboard errors
+filter issues
+Wrong Data Types
+
+Example:
+
+Revenue
+₹5000
+Five Thousand
+
+Problems:
+
+formulas fail
+calculations become incorrect
+Outliers / Invalid Values
+
+Example:
+
+Age
+25
+30
+500
+
+Problems:
+
+unrealistic data
+incorrect averages
+wrong predictions
+==================================================
+PART 4 — PROFESSIONAL DATA CLEANING WORKFLOW
+
+Step 1 → Understand Dataset
+Step 2 → Identify Problems
+Step 3 → Handle Missing Values
+Step 4 → Remove Duplicates
+Step 5 → Fix Formatting
+Step 6 → Validate Data
+Step 7 → Start Analysis
+
+Important Rule:
+Never analyze raw data directly.
+
+==================================================
+PART 5 — EXCEL DATA CLEANING SKILLS
+Remove Duplicates
+
+Purpose:
+Remove repeated rows.
+
+Location:
+Data → Remove Duplicates
+
+TRIM Function
+
+Purpose:
+Removes extra spaces.
+
+Formula:
+=TRIM(A2)
+
+Importance:
+Extra spaces create matching issues.
+
+UPPER / LOWER / PROPER
+
+UPPER:
+=UPPER(A2)
+
+Converts text to CAPITAL letters.
+
+LOWER:
+=LOWER(A2)
+
+Converts text to small letters.
+
+PROPER:
+=PROPER(A2)
+
+Converts text into Proper Case.
+
+Example:
+rahul kumar → Rahul Kumar
+
+Find & Replace
+
+Shortcut:
+Ctrl + H
+
+Uses:
+
+fix spelling
+replace symbols
+standardize text
+Text to Columns
+
+Purpose:
+Separates combined data.
+
+Example:
+
+Rahul,Delhi,5000
+
+Becomes:
+
+Name City Revenue
+
+==================================================
+PART 6 — REAL BUSINESS EXAMPLE
+
+Suppose sales data contains:
+
+duplicate order IDs
+missing customer names
+inconsistent city names
+negative revenue
+
+Analyst Responsibilities:
+
+clean dataset
+validate accuracy
+prepare reliable reports
+ensure trustworthy analysis
+==================================================
+PART 7 — ANALYTICAL THINKING TRAINING
+
+Weak Analyst Thinking:
+“Okay, values are missing.”
+
+Strong Analyst Thinking:
+
+Why are values missing?
+System issue?
+Optional field?
+Should rows be removed?
+Will this affect analysis?
+
+This mindset is very important.
+
+==================================================
+TODAY’S PRACTICAL TASKS
+
+Task 1:
+Create a dirty dataset with:
+
+duplicates
+missing values
+inconsistent names
+extra spaces
+
+Then clean it.
+
+Task 2:
+Practice:
+
+TRIM
+UPPER
+LOWER
+PROPER
+Remove Duplicates
+Find & Replace
+
+Task 3:
+Business Thinking Exercise
+
+Scenario:
+An e-commerce company reports unusually high sales.
+
+Later discovered:
+
+duplicate transactions
+missing refunds
+incorrect product prices
+
+Questions:
+
+What problems can this create?
+Which KPIs become incorrect?
+What should analyst do?
+==================================================
+MINI ASSIGNMENT — DAY 2
+
+Download a small sales/customer dataset.
+
+Tasks:
+
+Identify data quality issues
+Clean dataset in Excel
+Create:
+Before Cleaning sheet
+After Cleaning sheet
+
+Write:
+
+issues found
+cleaning steps
+business impact
+==================================================
+MINI CHALLENGE
+
+Scenario:
+Dashboard shows:
+Revenue increased by 40%.
+
+Later discovered:
+
+duplicate sales entries
+cancelled orders included
+
+Why is this dangerous?
+
+management may think business is growing
+wrong investment decisions
+unnecessary hiring
+excess inventory purchase
+
+How analysts prevent this:
+
+clean data before reporting
+validate transactions
+remove duplicates
+exclude cancelled orders
+perform quality checks
+==================================================
+INTERVIEW QUESTIONS — DAY 2
+
+Q1. What is data cleaning?
+
+Answer:
+Data cleaning is the process of identifying and fixing incorrect, incomplete, duplicate, or inconsistent data.
+
+Q2. Why is data cleaning important?
+
+Answer:
+Data cleaning ensures accurate analysis and prevents wrong business decisions.
+
+Q3. How do you handle duplicate records?
+
+Answer:
+I identify duplicates using tools like Remove Duplicates, filters, or SQL queries and remove them based on business rules.
+
+Q4. What are missing values?
+
+Answer:
+Missing values are empty data fields caused by skipped inputs, system issues, or data corruption.
+
+Q5. What problems occur due to inconsistent formatting?
+
+Answer:
+Inconsistent formatting causes grouping, filtering, and reporting errors because computers treat values differently.
+
+==================================================
+DAY 2 SUMMARY
+
+Today You Learned:
+
+what dirty data looks like
+common data problems
+professional cleaning workflow
+Excel cleaning techniques
+business impact of poor data
+analytical thinking mindset
+
+KEY TAKEAWAY:
+
+A great analyst does not only analyze data.
+
+A great analyst first ensures the data is trustworthy.
